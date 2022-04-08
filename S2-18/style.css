@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&display=swap');
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #121214;
+    width: 1280px;
+    height: 700px;
+    margin: 120px;
+    border-radius: 12px; 
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    margin: 30px;
+}
+.subtitle{
+    margin: 40px;
+    font-family: IBM Plex Sans;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.user{
+    margin: 15px;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 600;
+    color: #9C9C9C;
+    text-align: center;
+    overflow: hidden;
+}
+.avatar{
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.avatar:hover{
+    border: solid 1.5px #ECECEC;
+    border-radius: 10px;
+}
+.new-user{
+    margin: 15px;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 600;
+    color: #9C9C9C;
+    text-align: center;
+}
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E1E20;
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.add:hover    {
+    border: solid 1.5px #ECECEC;
+}
+.add:hover .circle{
+    border-radius: 50%;
+    border: solid 5px white;
+}
+.add:hover .horizontal-line{
+    width: 25px;
+    border-bottom: solid 5px white;
+    border-radius: 5px;
+}
+.add:hover .vertical-line{
+    height: 25px;
+    border-left: solid 5px white;
+    border-radius: 5px;
+}
+.circle{
+    position: relative;
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    border: solid 5px #6F6F70;
+}
+.horizontal-line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25px;
+    border-bottom: solid 5px #6F6F70;
+    border-radius: 5px;
+
+}
+.vertical-line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 25px;
+    border-left: solid 5px #6F6F70;
+    border-radius: 5px;
+
+}
+.user-name{
+    margin-top: 16px;
+}
+.manage{
+    margin: 80px;
+    height: 50px;
+    width: 200px;
+    background-color: #121214;
+    border: solid 1.5px white;
+    border-radius: 8px;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+.manage:hover{
+    background-color: white;
+    color: black;
+}
