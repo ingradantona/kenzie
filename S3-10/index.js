@@ -1,24 +1,19 @@
-function positions(firstPlace, secondPlace, lastPlace){
-    if (firstPlace == "Rafael" || firstPlace == "rafael"){
-        firstPlace = `1° - Colocado ${firstPlace}. `
-        secondPlace = `2° - Colocado ${secondPlace}. `
-        lastPlace = `3° - Colocado ${lastPlace}. `
-    } else if (secondPlace == "Rafael" || secondPlace == "rafael") {
-        firstPlace = `1° - Colocado ${secondPlace}. `
-        secondPlace = `2° - Colocado ${firstPlace}. `
-        lastPlace = `3° - Colocado ${lastPlace}. `
-    } else if (lastPlace == "Rafael" || lastPlace == "rafael"){
-        firstPlace = `1° - Colocado ${firstPlace}. `
-        secondPlace = `2° - Colocado ${lastPlace}. `
-        lastPlace = `3° - Colocado ${secondPlace}. `
+function positions (firstPlace, secondPlace, lastPlace){
+
+    let arr = [firstPlace, secondPlace, lastPlace]
+    
+    if (arr.indexOf("Daniel") == 2 || arr.indexOf("daniel") == 2){
+        arr = [firstPlace, lastPlace, secondPlace]
+    } else if (arr.indexOf("Daniel") == 1 || arr.indexOf("daniel") == 1){
+        arr = [secondPlace, firstPlace, lastPlace]
     }
 
-     console.log (firstPlace+secondPlace+lastPlace)
-
+    for (let i=0; i<arr.length; i++){
+        console.log(`${i+1}° - Colocado ${arr[i]}`)
+    }
 }
-
 //testes
 positions("Rafael","Manoel", "Daniel")
 positions("Manoel","Rafael", "Daniel")
 positions("Daniel","Manoel", "Rafael")
-positions("daniel","rafael","manoel")
+positions("rafael","daniel","manoel")
